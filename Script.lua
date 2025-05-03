@@ -36,14 +36,14 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      local Tab4o = MakeTab({Name = "all game"})
 ------- BUTTON
     AddButton(Tab1o, {
-     Name = "skull hub(nokey)",
+     Name = "skull hub(cókey)",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet('https://skullhub.xyz/loader.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hungquan99/SkullHub/main/loader.lua'))()
   end
   })
   
