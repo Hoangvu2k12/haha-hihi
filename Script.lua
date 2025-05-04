@@ -36,14 +36,14 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      local Tab4o = MakeTab({Name = "all game"})
 ------- BUTTON
     AddButton(Tab1o, {
-     Name = "skull hub(cókey)",
+     Name = "skull hub(nokey)",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/hungquan99/SkullHub/main/loader.lua'))()
+loadstring(game:HttpGet('https://skullhub.xyz/loader.lua'))()
   end
   })
   
@@ -123,19 +123,7 @@ getgenv().ForceUseWalkSpeedModifier = false
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
   end
   })
-  
-  AddButton(Tab2o, {
-     Name = "min gaming",
-    Callback = function()
-	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinA1Eng"))()
-  end
-  })
-  
   AddButton(Tab2o, {
      Name = "Quake or Matsune Hub",
     Callback = function()
