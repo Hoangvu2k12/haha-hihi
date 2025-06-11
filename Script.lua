@@ -32,21 +32,9 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 ------ Tab
      local Tab1o = MakeTab({Name = "dead Rails"})
      local Tab2o = MakeTab({Name = "blox fruit"})
-     local Tab3o = MakeTab({Name = "doors+event"})
+     local Tab3o = MakeTab({Name = "game hot"})
      local Tab4o = MakeTab({Name = "all game"})
 ------- BUTTON
-    AddButton(Tab1o, {
-     Name = "skull hub(nokey)",
-    Callback = function()
-	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet('https://skullhub.xyz/loader.lua'))()
-  end
-  })
-  
   AddButton(Tab1o, {
      Name = "Null-Fire(nokey)",
     Callback = function()
@@ -302,5 +290,17 @@ end)
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })
+  
+  AddButton(Tab4o, {
+     Name = "Wall hop",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lyraEz/lol/refs/heads/main/loaders/NewWallhop.lua"))()
   end
   })
