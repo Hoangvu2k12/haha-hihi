@@ -29,7 +29,14 @@ local Window = MakeWindow({
         }
     },
 })
-
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=83190276951914",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
 ------ Tab
      local Tab1o = MakeTab({Name = "dead Rails"})
      local Tab2o = MakeTab({Name = "blox fruit"})
