@@ -34,9 +34,6 @@ local Window = MakeWindow({
     },  -- ← CHỖ QUAN TRỌNG đây: dấu phẩy kết thúc sau Notifi
 })
 
--- 4. Tạo các Tab & Button
-local Tab1o = MakeTab({Name = "dead Rails"})
--- ... tiếp tục AddButton cho Tab1o, Tab2o, Tab3o, Tab4o như script gốc      
 ------ Tab
      local Tab1o = MakeTab({Name = "dead Rails"})
      local Tab2o = MakeTab({Name = "blox fruit"})
