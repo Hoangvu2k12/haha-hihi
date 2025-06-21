@@ -1,7 +1,5 @@
--- 1. Gọi UI
 loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua"))()
 
--- 2. Danh sách người được miễn key
 local allowedUsers = {"hoangvuQT2012k", "hoangvuVNG2012k"}
 local playerName = game.Players.LocalPlayer.Name
 
@@ -13,12 +11,10 @@ for _, name in pairs(allowedUsers) do
     end
 end
 
--- 3. Tạo cửa sổ UI
 local Window = MakeWindow({
     Hub = {
         Title = "Vũ Roblox tổng hợp",
-        Animation = "Vũ Roblox"
-    },
+        Animation = "Vũ Roblox"},
     Key = {
         KeySystem = not bypassKey,
         Title = "Key System",
@@ -31,7 +27,7 @@ local Window = MakeWindow({
             Incorrectkey = "The key is incorrect",
             CopyKeyLink = "Copied to Clipboard"
         }
-    },  -- ← CHỖ QUAN TRỌNG đây: dấu phẩy kết thúc sau Notifi
+    },
 })
 
 ------ Tab
