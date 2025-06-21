@@ -1,6 +1,8 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+-- 1. Gọi UI
+loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua"))()
 
-       local allowedUsers = {"hoangvuQT2012k", "hoangvuVNG2012k"}
+-- 2. Danh sách người được miễn key
+local allowedUsers = {"hoangvuQT2012k", "hoangvuVNG2012k"}
 local playerName = game.Players.LocalPlayer.Name
 
 local bypassKey = false
@@ -11,14 +13,14 @@ for _, name in pairs(allowedUsers) do
     end
 end
 
+-- 3. Tạo cửa sổ UI
 local Window = MakeWindow({
     Hub = {
         Title = "Vũ Roblox tổng hợp",
         Animation = "Vũ Roblox"
     },
     Key = {
-        KeySystem = not 
-bypassKey,
+        KeySystem = not bypassKey,
         Title = "Key System",
         Description = "",
         KeyLink = "",
@@ -29,8 +31,12 @@ bypassKey,
             Incorrectkey = "The key is incorrect",
             CopyKeyLink = "Copied to Clipboard"
         }
-    }
-      
+    },  -- ← CHỖ QUAN TRỌNG đây: dấu phẩy kết thúc sau Notifi
+})
+
+-- 4. Tạo các Tab & Button
+local Tab1o = MakeTab({Name = "dead Rails"})
+-- ... tiếp tục AddButton cho Tab1o, Tab2o, Tab3o, Tab4o như script gốc      
 ------ Tab
      local Tab1o = MakeTab({Name = "dead Rails"})
      local Tab2o = MakeTab({Name = "blox fruit"})
