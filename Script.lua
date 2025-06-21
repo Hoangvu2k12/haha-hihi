@@ -1,33 +1,35 @@
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
 
-       local Window = MakeWindow({
-         Hub = {
-         Title = "Vũ Roblox tổng hợp",
-         Animation = "Vũ Roblox"
-         },
-        Key = {
-        KeySystem = false,
+       local allowedUsers = {"hoangvuQT2012k", "hoangvuVNG2012k"}
+local playerName = game.Players.LocalPlayer.Name
+
+local bypassKey = false
+for _, name in pairs(allowedUsers) do
+    if name == playerName then
+        bypassKey = true
+        break
+    end
+end
+
+local Window = MakeWindow({
+    Hub = {
+        Title = "Vũ Roblox tổng hợp",
+        Animation = "Vũ Roblox"
+    },
+    Key = {
+        KeySystem = not 
+bypassKey,
         Title = "Key System",
         Description = "",
         KeyLink = "",
         Keys = {"1234"},
         Notifi = {
-        Notifications = true,
-        CorrectKey = "Running the Script...",
-       Incorrectkey = "The key is incorrect",
-       CopyKeyLink = "Copied to Clipboard"
-      }
+            Notifications = true,
+            CorrectKey = "Running the Script...",
+            Incorrectkey = "The key is incorrect",
+            CopyKeyLink = "Copied to Clipboard"
+        }
     }
-  })
-
-       MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=83711217259574",
-       Size = {60, 60},
-       Color = Color3.fromRGB(10, 10, 10),
-       Corner = true,
-       Stroke = false,
-       StrokeColor = Color3.fromRGB(255, 0, 0)
-      })
       
 ------ Tab
      local Tab1o = MakeTab({Name = "dead Rails"})
